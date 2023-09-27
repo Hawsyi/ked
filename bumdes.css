@@ -42,7 +42,7 @@ body {
   font-style: italic;
 }
 .navbar .navbar-logo span {
-  color: #fa0404;
+  color: #fa6a04;
   font-style: italic;
 }
 
@@ -87,21 +87,52 @@ body {
   margin-left: 1rem;
 }
 
-.about .row .bumdes-card {
-  text-align: center;
-  padding-bottom: 4rem;
+.about .row .bumdes1-card {
+  padding-bottom: 5rem;
 }
 
-.about .row .bumdes-card img {
+.about .row .bumdes1-card img {
   width: 50%;
 }
-
-.Guru .row .guru-card .guru-card-tittle {
-  margin: 1rem auto 0.5rem;
+.about .row .bumdes2-card {
+  text-align: center;
+  padding-bottom: 5rem;
 }
+
+.about .row .bumdes2-card img {
+  width: 50%;
+}
+.about .row .bumdes3-card {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.about .row .bumdes3-card img {
+  width: 50%;
+}
+.about .row .bumdes4-card {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.about .row .bumdes4-card img {
+  width: 50%;
+}
+.about .bumdes5-card {
+  padding-bottom: 5rem;
+}
+
+.about .bumdes5-card img {
+  width: 8%;
+  margin-left: 25vh;
+}
+.bumdes5-card-tittle {
+  color: #fff;
+  margin-left: 21vh;
+}
+
 .guru-card-tittle {
   color: #fff;
-  text-align: center;
 }
 
 /* media queries */
