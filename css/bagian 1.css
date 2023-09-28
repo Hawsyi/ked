@@ -1,6 +1,6 @@
 :root {
   --primary: #ffffff;
-  --bg: #015b01;
+  --bg: #1e1e1e;
   background-blend-mode: color-burn;
 }
 
@@ -21,30 +21,31 @@ body {
   background-color: var(--bg);
   color: var(--bg);
 }
-.gambar .about-img {
-  display: flex;
-  position: fixed;
-  z-index: 9999;
+.banner {
   width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.gambar .about-img img {
-  position: relative;
-  border: 5px solid white;
-  padding: 10px;
-  height: 50vh;
-  width: 70;
-  margin-left: 60vh;
+.banner video {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+.banner h1 {
+  font-size: 50px;
+  position: absolute;
+  z-index: 2;
+  color: #fd7f24;
+}
+.banner h2 {
+  font-size: 50px;
+  position: absolute;
+  z-index: 2;
+  color: #fd7f24;
   margin-top: 20vh;
-}
-.gambar .about-img .close {
-  color: #eee;
-  margin-top: 15vh;
-  margin-left: 10vh;
 }
 
 /* Navbar */
@@ -53,7 +54,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 7%;
-  background-color: rgb(8, 66, 2);
+  background-color: rgb(14, 14, 14);
   border-bottom: 1px solid #fff;
   position: fixed;
   top: 0;
@@ -107,11 +108,10 @@ body {
 
 /*footer*/
 footer {
-  background-color: rgb(8, 66, 2);
+  background-color: rgb(14, 14, 14);
   text-align: center;
   position: relative;
   padding: 2rem;
-  margin-top: 80vh;
 }
 footer .links a {
   color: #b28a06;
