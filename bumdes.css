@@ -88,7 +88,7 @@ body {
 }
 
 .about .row .bumdes1-card {
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 
 .about .row .bumdes1-card img {
@@ -118,17 +118,22 @@ body {
 .about .row .bumdes4-card img {
   width: 50%;
 }
-.about .bumdes5-card {
+.about .row .bumdes5-card {
+  text-align: center;
+  padding-bottom: 5rem;
+  margin-right: 10vh;
+}
+
+.about .row .bumdes5-card img {
+  width: 50%;
+}
+.about .row .bumdes6-card {
+  text-align: center;
   padding-bottom: 5rem;
 }
 
-.about .bumdes5-card img {
-  width: 8%;
-  margin-left: 25vh;
-}
-.bumdes5-card-tittle {
-  color: #fff;
-  margin-left: 21vh;
+.about .row .bumdes6-card img {
+  width: 40%;
 }
 
 .guru-card-tittle {
