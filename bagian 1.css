@@ -170,10 +170,10 @@ body {
 }
 .about .mow .about-img {
   flex: 1 0 0rem;
-  margin-right: 10vh;
+  margin-right: 15vh;
 }
 .about .mow .about-img img {
-  width: 109%;
+  width: 100%;
 }
 .about .mow .content {
   flex: 1 1 35rem;

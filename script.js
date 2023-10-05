@@ -34,7 +34,7 @@ window.onscroll = function () {
 //penghitung angka
 
 let valueDisplays = document.querySelectorAll(".num");
-let interval = "5500";
+let interval = "100000";
 
 valueDisplays.forEach((valueDisplays) => {
   let startValue = 0;
