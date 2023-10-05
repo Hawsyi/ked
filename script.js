@@ -21,7 +21,7 @@ const bg = document.querySelector(".rrr");
 window.onscroll = function () {
   const bottom = window.scrollY;
   // console.log(top);
-  if (bottom >= 450) {
+  if (bottom >= 410) {
     bg.classList.replace("about,mow", "rrr");
     console.log(bg.classList);
     bg.classList.replace("rrr", "about,mow");
