@@ -166,7 +166,7 @@ body {
 .about .mow {
   display: flex;
   padding-top: 2rem;
-  background-color: orange;
+  background-color: rgb(61, 57, 53);
 }
 .about .mow .about-img {
   flex: 1 0 0rem;
@@ -182,7 +182,7 @@ body {
   font-size: 1.8rem;
   margin-bottom: 1rem;
   margin-left: 10vh;
-  color: #1d1e1d;
+  color: #f8fff8;
 }
 .about .mow .content p {
   margin-bottom: 0.8rem;
