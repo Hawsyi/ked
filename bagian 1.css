@@ -71,7 +71,7 @@ body {
   position: absolute;
   margin-top: 50vh;
   color: rgb(255, 165, 0);
-  margin-right: 90vh;
+  margin-right: 70vh;
   text-shadow: black;
 }
 .banner h6 {
@@ -79,7 +79,7 @@ body {
   position: absolute;
   margin-top: 50vh;
   color: orange;
-  margin-right: 30vh;
+  margin-left: 10vh;
   text-shadow: black;
 }
 .banner .guru-card-tittle {
@@ -97,7 +97,7 @@ body {
   position: absolute;
   margin-top: 60vh;
   color: white;
-  margin-right: 90vh;
+  margin-right: 70vh;
   text-shadow: black;
 }
 .banner .ss {
@@ -106,7 +106,7 @@ body {
   position: absolute;
   margin-top: 60vh;
   color: white;
-  margin-right: 30vh;
+  margin-left: 10vh;
   text-shadow: black;
 }
 
@@ -120,13 +120,13 @@ body {
   position: absolute;
   width: 220px;
   margin-top: 55vh;
-  margin-right: 90vh;
+  margin-right: 70vh;
 }
 .banner .img8 {
   position: absolute;
   width: 220px;
   margin-top: 55vh;
-  margin-right: 30vh;
+  margin-left: 10vh;
 }
 
 /* Navbar */
@@ -240,7 +240,7 @@ body {
   margin-left: 70vh;
 }
 .jj img {
-  width: 300px;
+  width: 200px;
   padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
