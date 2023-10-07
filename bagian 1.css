@@ -58,38 +58,75 @@ body {
   margin-right: 100vh;
   text-shadow: black;
 }
-.banner .img2 {
+.banner h4 {
+  font-size: 100px;
   position: absolute;
-  width: 100px;
   margin-top: 50vh;
+  color: rgb(255, 136, 0);
   margin-right: 150vh;
-  border: 5px solid rgb(0, 0, 0);
-  padding: 10px;
-  background-color: #eee;
+  text-shadow: black;
 }
-.banner .img3 {
+.banner h5 {
+  font-size: 100px;
   position: absolute;
-  width: 100px;
   margin-top: 50vh;
-  margin-right: 100vh;
-  border: 5px solid rgb(0, 0, 0);
-  background-color: #eee;
-  padding: 6px;
+  color: rgb(255, 165, 0);
+  margin-right: 90vh;
+  text-shadow: black;
 }
-.banner .img4 {
+.banner h6 {
+  font-size: 100px;
   position: absolute;
-  width: 120px;
   margin-top: 50vh;
-  margin-right: 50vh;
-  border: 5px solid rgb(0, 0, 0);
-  background-color: #eee;
-  padding: 6px;
+  color: orange;
+  margin-right: 30vh;
+  text-shadow: black;
 }
-.banner .img5 {
+.banner .guru-card-tittle {
+  font-size: 20px;
+  padding-top: 5rem;
   position: absolute;
-  width: 170px;
-  margin-top: 80vh;
-  margin-right: 100vh;
+  margin-top: 60vh;
+  color: white;
+  margin-right: 150vh;
+  text-shadow: black;
+}
+.banner .mm {
+  font-size: 20px;
+  padding-top: 5rem;
+  position: absolute;
+  margin-top: 60vh;
+  color: white;
+  margin-right: 90vh;
+  text-shadow: black;
+}
+.banner .ss {
+  font-size: 20px;
+  padding-top: 5rem;
+  position: absolute;
+  margin-top: 60vh;
+  color: white;
+  margin-right: 30vh;
+  text-shadow: black;
+}
+
+.banner .img6 {
+  position: absolute;
+  width: 220px;
+  margin-top: 55vh;
+  margin-right: 150vh;
+}
+.banner .img7 {
+  position: absolute;
+  width: 220px;
+  margin-top: 55vh;
+  margin-right: 90vh;
+}
+.banner .img8 {
+  position: absolute;
+  width: 220px;
+  margin-top: 55vh;
+  margin-right: 30vh;
 }
 
 /* Navbar */
@@ -166,14 +203,13 @@ body {
 .about .mow {
   display: flex;
   padding-top: 2rem;
-  background-color: rgb(61, 57, 53);
+  background-color: rgb(19, 18, 18);
 }
 .about .mow .about-img {
   flex: 1 0 0rem;
-  margin-right: 15vh;
 }
 .about .mow .about-img img {
-  width: 100%;
+  width: 50%;
 }
 .about .mow .content {
   flex: 1 1 35rem;
@@ -183,6 +219,7 @@ body {
   margin-bottom: 1rem;
   margin-left: 10vh;
   color: #f8fff8;
+  margin-top: 10vh;
 }
 .about .mow .content p {
   margin-bottom: 0.8rem;
@@ -193,76 +230,32 @@ body {
   color: #fff;
 }
 
-/* Rahma */
-/* .rahma .row {
-  padding-bottom: 10rem;
-  padding-right: 5rem;
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 0.8rem;
-  background-color: rgb(99, 99, 99);
+/* div baru */
+.jj {
+  background-color: rgb(255, 140, 0);
+}
+.jj h1 {
+  color: white;
+  padding-top: 2rem;
+  margin-left: 70vh;
+}
+.jj img {
+  width: 300px;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: 15vh;
+}
+.jj .img5 {
+  width: 170px;
+  margin-left: 80vh;
+}
+.jj h2 {
+  padding: 1rem;
+  color: whitesmoke;
 }
 
-.rahma .row h1 {
-  color: white;
-  margin-top: 20vh;
-  margin-left: 10vh;
-}
-.rahma .row h2 {
-  color: white;
-  margin-top: 3vh;
-  font-size: 15px;
-  margin-left: 10vh;
-}
-.rahma .row p {
-  color: white;
-  margin-top: 5vh;
-  font-size: 12px;
-  margin-right: 60vh;
-  margin-left: 10vh;
-} */
-
-.about .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 5rem;
-  margin-left: 20vh;
-}
-
-.about .row img {
-  width: 15vh;
-}
-.about .row .bumdes1-card h1 {
-  font-size: 30px;
-  color: white;
-}
-
-.about .row .bumdes2-card h1 {
-  margin-top: 3vh;
-  font-size: 50px;
-  margin-left: 10vh;
-  color: white;
-}
-.about .row .bumdes3-card h1 {
-  margin-top: 3vh;
-  font-size: 50px;
-  margin-left: 10vh;
-  color: white;
-}
-
-.about .row .bumdes2-card h3 {
-  margin-top: 2vh;
-  font-size: 20px;
-  margin-left: 10vh;
-  color: orange;
-}
-.about .row .bumdes3-card h3 {
-  margin-top: 2vh;
-  font-size: 20px;
-  margin-left: 10vh;
-  color: orange;
-}
-
+/* 
 .rrr {
   display: flex;
   position: fixed;
@@ -274,17 +267,10 @@ body {
   margin-left: 120vh;
   padding: 5rem;
 }
-.rrr4 {
-  display: flex;
-  margin-left: 120vh;
-}
 
 .rrr img {
   width: 50vh;
-}
-.rrr4 img {
-  width: 50vh;
-}
+} */
 
 /*footer*/
 footer {

@@ -17,24 +17,24 @@ document.addEventListener("click", function (e) {
 });
 
 //navbar item
-const bg = document.querySelector(".rrr");
-window.onscroll = function () {
-  const bottom = window.scrollY;
-  // console.log(top);
-  if (bottom >= 370) {
-    bg.classList.replace("about,mow", "rrr");
-    console.log(bg.classList);
-    bg.classList.replace("rrr", "about,mow");
-  } else {
-    bg.classList.replace("rrr", "about,mow");
-    bg.classList.replace("about,mow", "rrr");
-  }
-};
+// const bg = document.querySelector(".rrr");
+// window.onscroll = function () {
+//   const bottom = window.scrollY;
+//   // console.log(top);
+//   if (bottom >= 370) {
+//     bg.classList.replace(".", "about,mow");
+//     console.log(bg.classList);
+//     bg.classList.replace("about,mow", ".");
+//   } else {
+//     bg.classList.replace("about,mow", ".");
+//     bg.classList.replace(".", "about,mow");
+//   }
+// };
 
 //penghitung angka
 
 let valueDisplays = document.querySelectorAll(".num");
-let interval = "100000";
+let interval = "2000";
 
 valueDisplays.forEach((valueDisplays) => {
   let startValue = 0;
