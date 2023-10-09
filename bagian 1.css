@@ -236,6 +236,7 @@ body {
   cursor: pointer;
   border: 5px solid white;
   background-color: wheat;
+  transition: 0.8s;
 }
 .jj .kerjasamaicon {
   width: 200px;
@@ -246,6 +247,7 @@ body {
   cursor: pointer;
   border: 5px solid white;
   background-color: wheat;
+  transition: 0.8s;
 }
 .jj .kawasanicon {
   width: 165px;
@@ -256,6 +258,7 @@ body {
   cursor: pointer;
   border: 5px solid white;
   background-color: wheat;
+  transition: 0.8s;
 }
 .jj img:hover {
   transform: scale(1.3);
