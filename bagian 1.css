@@ -232,7 +232,7 @@ body {
   padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-left: 15vh;
+  margin-left: 20vh;
   cursor: pointer;
   border: 5px solid white;
   background-color: wheat;
@@ -243,7 +243,7 @@ body {
   padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-left: 15vh;
+  margin-left: 20vh;
   cursor: pointer;
   border: 5px solid white;
   background-color: wheat;
@@ -254,7 +254,7 @@ body {
   padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-left: 15vh;
+  margin-left: 20vh;
   cursor: pointer;
   border: 5px solid white;
   background-color: wheat;
@@ -274,6 +274,82 @@ body {
 .jj h2 {
   padding: 1rem;
   color: whitesmoke;
+}
+
+/* avengers */
+.avengers {
+  background-color: black;
+}
+.slide-images {
+  overflow: hidden;
+}
+@-webkit-keyframes slide_animation {
+  0% {
+    left: 0px;
+  }
+  10% {
+    left: 0px;
+  }
+  20% {
+    left: 1200px;
+  }
+  30% {
+    left: 1200px;
+  }
+  40% {
+    left: 2400px;
+  }
+  50% {
+    left: 2400px;
+  }
+  60% {
+    left: 1200px;
+  }
+  70% {
+    left: 1200px;
+  }
+  80% {
+    left: 0px;
+  }
+  90% {
+    left: 0px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.slide-images {
+  height: 400px;
+  margin: 0 0 0 -2400px;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration: 33s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+}
+
+.avengers h1 {
+  color: brown;
+  font-size: 30px;
+  align-items: center;
+  margin-left: 75vh;
+  padding: 2rem;
+}
+.avengers h1 span {
+  color: white;
+  font-size: 30px;
+  align-items: center;
+}
+.avenger {
+  margin: 5vh;
+}
+.avengers img {
+  width: 400px;
+  border: 5px solid brown;
+  position: relative;
+  float: left;
 }
 
 /*footer*/
