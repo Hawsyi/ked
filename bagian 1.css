@@ -210,7 +210,7 @@ body {
 }
 .about .mow .content p {
   margin-bottom: 0.8rem;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 1000;
   line-height: 1.6;
   margin-left: 10vh;
@@ -225,14 +225,14 @@ body {
   color: brown;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  margin-left: 70vh;
+  margin-left: 65vh;
 }
 .jj .bumdesicon {
   width: 180px;
   padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-left: 20vh;
+  margin-left: 16vh;
   cursor: pointer;
   border: 5px solid white;
   background-color: wheat;
@@ -269,7 +269,7 @@ body {
 }
 .img5 {
   width: 170px;
-  margin-left: 78vh;
+  margin-left: 82vh;
 }
 .jj h2 {
   padding: 1rem;
@@ -327,7 +327,7 @@ body {
 }
 .potopoto h1 {
   padding-top: 2rem;
-  color: green;
+  color: rgba(177, 53, 53, 0.913);
   text-align: center;
 }
 .potopoto h1 span {
