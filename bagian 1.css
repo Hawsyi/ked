@@ -163,7 +163,7 @@ body {
 }
 
 .navbar .navbar-nav a:hover {
-  color: var(--bg);
+  color: green;
 }
 
 .navbar .navbar-nav a::after {

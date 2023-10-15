@@ -1,6 +1,6 @@
 :root {
   --primary: #ffffff;
-  --bg: #1e1e1e;
+  --bg: khaki;
 }
 
 * {
@@ -26,7 +26,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 7%;
-  background-color: rgb(14, 14, 14);
+  background-color: rgb(0, 0, 0, 0.8);
   border-bottom: 1px solid #fff;
   position: fixed;
   top: 0;
@@ -54,7 +54,7 @@ body {
 }
 
 .navbar .navbar-nav a:hover {
-  color: var(--bg);
+  color: green;
 }
 
 .navbar .navbar-nav a::after {
@@ -79,20 +79,130 @@ body {
 }
 
 /* about */
-.about {
-  display: flex;
+.div1 {
+  display: relative;
 }
-.about .gambar img {
-  width: 30%;
+.gambar {
+  margin-top: 5vh;
+  background-color: khaki;
+}
+.div1 .gambar img {
+  width: 80%;
+  height: 50vh;
+  margin-left: 10%;
+  margin-top: 6%;
+  border-radius: 10px;
+}
+.gambar1 {
+  padding-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: khaki;
+}
+.div1 .gambar1 img {
+  width: 35%;
+  margin-left: 8vh;
+}
+.div1 .gambar1 h2 {
   margin-top: 20vh;
-  margin-left: 72vh;
+  color: black;
+  font-size: 20px;
+  margin-left: 15vh;
+}
+.div1 .gambar1 .trio {
+  margin-left: 8vh;
+}
+.div1 .gambar1 p {
+  display: relative;
+  margin-top: 20vh;
+  color: black;
+  font-size: 20px;
+}
+.gambar2 {
+  padding-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: khaki;
+}
+.div1 .gambar2 img {
+  width: 26%;
+  margin-left: 17vh;
+}
+.div1 .gambar2 h2 {
+  margin-top: 20vh;
+  color: black;
+  font-size: 20px;
+  margin-left: 15vh;
+}
+.div1 .gambar2 .siti {
+  margin-top: 20vh;
+  color: black;
+  font-size: 20px;
+  margin-left: 17vh;
+}
+.div1 .gambar2 p {
+  display: relative;
+  margin-top: 20vh;
+  color: black;
+  font-size: 20px;
+}
+.gambar3 {
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: khaki;
+}
+.div1 .gambar3 img {
+  width: 35%;
+  margin-left: 15vh;
+}
+.div1 .gambar3 h2 {
+  margin-top: 30vh;
+  color: black;
+  font-size: 20px;
+  margin-left: 15vh;
+}
+.div1 .gambar3 .ncek {
+  margin-top: 30vh;
+  color: black;
+  font-size: 20px;
+  margin-left: 5vh;
+}
+.div1 .gambar3 p {
+  display: relative;
+  margin-top: 30vh;
+  color: black;
+  font-size: 20px;
+}
+.gambar4 {
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: khaki;
+}
+.div1 .gambar4 img {
+  width: 30%;
+  margin-left: 30vh;
+}
+.div1 .gambar4 h2 {
+  margin-top: 30vh;
+  color: black;
+  font-size: 20px;
+  margin-left: 15vh;
+}
+.div1 .gambar4 .fahri {
+  margin-top: 30vh;
+  color: black;
+  font-size: 20px;
+  margin-left: 10vh;
+}
+.div1 .gambar4 p {
+  display: relative;
+  margin-top: 30vh;
+  color: black;
+  font-size: 20px;
 }
 
-.about .gambar h2 {
-  color: #fff;
-  margin-left: 68vh;
-  font-size: 18px;
-}
 /* media queries */
 
 /* laptop */
@@ -231,78 +341,14 @@ body {
   .contact .row form {
     padding-top: 0;
   }
-} */}
-  /* mobile phone */
+} */
+}
+/* mobile phone */
 
-  /* mobile phone */
+/* mobile phone */
 
-  @media (max-width: 450px) {
-    html {
-      font-size: 55%;
-    }
-   
-@media (max-width: 650px) {
+@media (max-width: 450px) {
   html {
-    font-size: 75%;
-  }
-
-  #hamburger-menu {
-    display: inline-block;
-  }
-
-  .navbar .navbar-nav {
-    position: absolute;
-    background-color: #fff;
-    top: 100%;
-    right: -100%;
-    width: 20rem;
-    height: 100vh;
-    transition: 0.3s;
-  }
-
-  .navbar .navbar-nav.active {
-    right: 0;
-  }
-
-  .navbar .navbar-nav a {
-    color: var(--bg);
-    display: block;
-    margin: 1.5rem;
-    padding: 0.5rem;
-    font-size: 2rem;
-  }
-
-  .navbar .navbar-nav a::after {
-    transform-origin: 0 0;
-  }
-
-  .navbar .navbar-nav a:hover::after {
-    transform: scaleX(0.2);
-  }
-  .banner {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .banner video {
-    position: absolute;
-    object-fit: cover;
-    width: 100%;
-    height: 100vh;
-  }
-  .banner h1 {
-    font-size: 50px;
-    position: absolute;
-    z-index: 2;
-    color: #fd7f24;
-  }
-  .banner h2 {
-    font-size: 50px;
-    position: absolute;
-    z-index: 2;
-    color: #fd7f24;
-    margin-top: 20vh;
+    font-size: 55%;
   }
 }
