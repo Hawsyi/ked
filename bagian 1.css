@@ -222,11 +222,10 @@ body {
   background-color: rgb(255, 140, 0);
 }
 .jj h1 {
+  margin-left: 70vh;
   color: brown;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  margin-left: 65vh;
 }
+
 .jj .bumdesicon {
   width: 180px;
   padding-top: 1rem;
@@ -266,6 +265,11 @@ body {
 .kiw {
   padding: 1rem;
   background-color: rgb(255, 140, 0);
+  cursor: pointer;
+  transition: 0.8s;
+}
+.kiw:hover {
+  transform: scale(1.1);
 }
 .img5 {
   width: 170px;
