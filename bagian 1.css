@@ -283,6 +283,7 @@ body {
 /* avengers */
 .avengers {
   display: flex;
+
   padding-top: 3rem;
   transition: 2s;
 }
