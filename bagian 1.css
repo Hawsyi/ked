@@ -1,6 +1,6 @@
 :root {
   --primary: #ffffff;
-  --bg: #1e1e1e;
+  --bg: grey;
   background-blend-mode: color-burn;
 }
 
@@ -33,6 +33,7 @@ body {
   object-fit: cover;
   width: 100%;
   height: 100vh;
+  border-radius: 20px;
 }
 .banner h1 {
   font-size: 50px;
@@ -188,6 +189,7 @@ body {
 }
 
 .about .mow {
+  border-radius: 20px;
   display: flex;
   padding-top: 2rem;
   background-color: rgb(19, 18, 18);
@@ -219,6 +221,7 @@ body {
 
 /* div baru */
 .jj {
+  border-radius: 20px;
   background-color: rgb(255, 140, 0);
 }
 .jj h1 {
@@ -263,6 +266,7 @@ body {
   transform: scale(1.1);
 }
 .kiw {
+  border-radius: 20px;
   padding: 1rem;
   background-color: rgb(255, 140, 0);
   cursor: pointer;
@@ -283,7 +287,7 @@ body {
 /* avengers */
 .avengers {
   display: flex;
-
+  border-radius: 20px;
   padding-top: 3rem;
   transition: 2s;
 }

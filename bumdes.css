@@ -150,6 +150,7 @@ body {
   border: 5px solid black;
   cursor: pointer;
   transition: 0.8s;
+  width: 15%;
 }
 
 .about .row .bumdes3-card img {
@@ -182,6 +183,41 @@ body {
 .about .row .bumdes4-card .guru-card-tittle {
   margin-top: 1vh;
   color: black;
+}
+.tablee {
+  padding-top: 5rem;
+  background-color: var(--bg);
+  width: 100%;
+  height: 80%;
+  padding-bottom: 5rem;
+}
+.tablee h3 {
+  margin-left: 42.5vh;
+  text-align: center;
+  background-color: green;
+  border-radius: 5px;
+  width: 56.7%;
+  height: 20%;
+  border: 2px solid white;
+}
+.tablee table {
+  text-align: center;
+  position: relative;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+.tablee th,
+.tablee td {
+  padding: 7px 17px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.tablee thead th {
+  background-color: green;
+  color: black;
+  border-color: white;
+  text-transform: uppercase;
 }
 
 /* media queries */
