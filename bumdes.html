@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="bumdes.css" />
+
     <!-- my style -->
   </head>
 
@@ -23,8 +24,7 @@
 
     <nav class="navbar">
       <a href="index.html" class="navbar-logo"
-        >BUM<span>DES</span>.</a
-      >
+        >BUMDES.</a>
 
       <div class="navbar-nav">
         <a href="index.html">HOME</a>
@@ -68,6 +68,37 @@
   
      
     <!--About section end-->
+
+      <div class="isi">   
+      <div class="ey">
+      <h3>Bumdes</h3>
+      <input type="text" id="name">
+     
+    </div>
+      <div class="em">
+      <h3>Bumdes</h3>
+      <input type="text" id="name">
+     
+    </div>
+      <div class="em">
+      <h3>Bumdes</h3>
+      <input type="text" id="name">
+      
+    </div>
+      <div class="em">
+      <h3>Bumdes</h3>
+      <input type="text" id="name">
+      
+    </div>
+      <div class="em">
+      <h3>Bumdes</h3>
+      <input type="text" id="name">
+    </div>
+    <button>SIMPAN</button>
+      <div><span></span></div>
+    </div>
+ 
+  
     <!-- table area -->
 <div class="tablee">
   <h3>Data Bumdes Kabupaten Bogor</h3>
@@ -195,5 +226,15 @@
     </script>
     <!-- my java script -->
     <script src="script.js"></script>
-  </body>
+   
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>$(document).ready(function(){
+$("button").click(function(event){
+var name = $("#name").val()
+$("span").html(name)
+$("#name").val("")
+});
+});
+</script>  
+</body>
 </html>

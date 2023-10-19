@@ -41,7 +41,7 @@ body {
   color: #fff;
   font-style: italic;
 }
-.navbar .navbar-logo span {
+.navbar .navbar-logo {
   color: #fa6a04;
   font-style: italic;
 }
@@ -184,6 +184,20 @@ body {
   margin-top: 1vh;
   color: black;
 }
+.isi {
+  display: flex;
+  margin-top: 10vh;
+  background-color: white;
+}
+.isi input {
+  border: 2px solid black;
+}
+.isi h3 {
+  text-align: center;
+}
+.isi span {
+}
+
 .tablee {
   padding-top: 5rem;
   background-color: var(--bg);
