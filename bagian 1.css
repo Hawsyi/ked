@@ -1,6 +1,6 @@
 :root {
   --primary: #ffffff;
-  --bg: grey;
+  --bg: rgb(32, 32, 32);
   background-blend-mode: color-burn;
 }
 
@@ -33,7 +33,6 @@ body {
   object-fit: cover;
   width: 100%;
   height: 100vh;
-  border-radius: 20px;
 }
 .banner h1 {
   font-size: 50px;
@@ -189,7 +188,6 @@ body {
 }
 
 .about .mow {
-  border-radius: 20px;
   display: flex;
   padding-top: 2rem;
   background-color: rgb(19, 18, 18);
@@ -221,7 +219,6 @@ body {
 
 /* div baru */
 .jj {
-  border-radius: 20px;
   background-color: rgb(255, 140, 0);
 }
 .jj h1 {
@@ -266,7 +263,6 @@ body {
   transform: scale(1.1);
 }
 .kiw {
-  border-radius: 20px;
   padding: 1rem;
   background-color: rgb(255, 140, 0);
   cursor: pointer;
@@ -287,7 +283,6 @@ body {
 /* avengers */
 .avengers {
   display: flex;
-  border-radius: 20px;
   padding-top: 3rem;
   transition: 2s;
 }
@@ -572,7 +567,7 @@ footer .credit a:hover {
     font-size: 30px;
     position: absolute;
     z-index: 2;
-    margin-left: 80vh;
+    margin-left: 100vh;
     color: white;
   }
   .banner h2 {
@@ -581,12 +576,12 @@ footer .credit a:hover {
     z-index: 2;
     color: orange;
     margin-top: 10vh;
-    margin-left: 72vh;
+    margin-left: 92vh;
   }
   .banner h4 {
     position: absolute;
     font-size: 35px;
-    margin-left: 105vh;
+    margin-left: 115vh;
   }
   .banner h5 {
     position: absolute;
@@ -596,11 +591,11 @@ footer .credit a:hover {
   .banner h6 {
     position: absolute;
     font-size: 35px;
-    margin-left: 40vh;
+    margin-left: 35vh;
   }
   .banner .img6 {
     width: 100px;
-    margin-left: 105vh;
+    margin-left: 115vh;
   }
   .banner .img7 {
     width: 100px;
@@ -608,12 +603,12 @@ footer .credit a:hover {
   }
   .banner .img8 {
     width: 100px;
-    margin-left: 40vh;
+    margin-left: 35vh;
   }
   .banner .guru-card-tittle {
     font-size: 12px;
     margin-top: 55vh;
-    margin-left: 105vh;
+    margin-left: 115vh;
   }
   .banner .mm {
     font-size: 12px;
@@ -623,80 +618,32 @@ footer .credit a:hover {
   .banner .ss {
     font-size: 12px;
     margin-top: 55vh;
-    margin-left: 40vh;
+    margin-left: 39vh;
   }
 
   /* Rahma */
-  .rahma .row {
-    padding-right: 5rem;
+  .mow {
     display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(99, 99, 99);
+    background-color: rgb(19, 18, 18);
   }
-
-  .rahma .row h1 {
-    color: white;
-    margin-top: 20vh;
-    margin-left: 10vh;
+  .mow .about-img {
+    flex: 1 0 0rem;
   }
-  .rahma .row h2 {
-    color: white;
-    margin-top: 3vh;
-    font-size: 15px;
-    margin-left: 10vh;
+  .mow .about-img img {
+    width: 50%;
   }
-  .rahma .row p {
-    color: white;
-    margin-top: 5vh;
-    font-size: 12px;
-    margin-right: 60vh;
-    margin-left: 10vh;
+  .mow .content {
+    flex: 1 1 35rem;
   }
-
-  .about .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 5rem;
-    margin-left: 20vh;
+  .mow .content h3 {
+    font-size: 1.8rem;
+    color: #f8fff8;
   }
-
-  .about .row img {
-    width: 5vh;
-  }
-  .about .row .bumdes1-card h1 {
-    font-size: 30px;
-    color: white;
-  }
-
-  .about .row .bumdes2-card h1 {
-    margin-top: 3vh;
-    font-size: 50px;
-    margin-left: 10vh;
-    color: white;
-  }
-  .about .row .bumdes3-card h1 {
-    margin-top: 3vh;
-    font-size: 50px;
-    margin-left: 10vh;
-    color: white;
-  }
-
-  .about .row .bumdes2-card h3 {
-    margin-top: 2vh;
-    font-size: 20px;
-    margin-left: 10vh;
-    color: orange;
-  }
-  .about .row .bumdes3-card h3 {
-    margin-top: 2vh;
-    font-size: 20px;
-    margin-left: 10vh;
-    color: orange;
-  }
-  .potopoto {
-    width: 90%;
-  }
-  .avengers {
-    width: 90%;
+  .mow .content p {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    font-weight: 1000;
+    line-height: 1.6;
+    color: #fff;
   }
 }
