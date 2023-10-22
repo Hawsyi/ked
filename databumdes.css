@@ -1,0 +1,51 @@
+:root {
+  --primary: #ffffff;
+  --bg: white;
+  background-blend-mode: color-burn;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "poppins", sans-serif;
+  background-color: var(--bg);
+  color: var(--bg);
+}
+.form {
+  display: relative;
+}
+.form table {
+  margin-left: 50vh;
+  background-color: white;
+  border: 2px solid black;
+}
+th,
+td {
+  color: black;
+}
+.form h3 {
+  display: relative;
+  margin-left: 50vh;
+  color: black;
+}
+input {
+  border: 1px solid black;
+}
+.list {
+  display: relative;
+  background-color: grey;
+}
+.list h3 {
+  color: black;
+  margin-left: 45vh;
+}
