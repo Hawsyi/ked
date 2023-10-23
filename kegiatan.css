@@ -311,9 +311,9 @@ body {
 }
 /* mobile phone */
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   html {
-    font-size: 35%;
+    font-size: 50%;
   }
 
   #hamburger-menu {
@@ -349,80 +349,89 @@ body {
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
   }
-  .about .row {
-    flex-wrap: wrap;
-  }
-  .about .row .about-img img {
-    height: 24rem;
-    object-fit: cover;
-    object-position: relative;
-  }
-  .about .row .content {
-    padding: 0;
-  }
-  .about .row .content h3 {
-    margin-top: 1rem;
-    font-size: 2rem;
-  }
-  .about .row .content p {
-    font-size: 1.6rem;
-  }
-  .contact .row {
-    flex-wrap: wrap;
-  }
-  .contact .row .map {
-    height: 30rem;
-  }
-  .hero .home .content h1 {
-    margin: 0;
-    padding: 0;
-    max-width: 450px;
-  }
-  .hero ::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 0px;
-    height: 30%;
-    bottom: 0;
-    background: linear-gradient(
-      0deg rbga(1, 1, 3, 1) 8%,
-      #e1ff00(255, 4, 255, 0) 30%
-    );
-  }
-  .hero .content h1 {
-    font-size: 6rem;
-    font-style: bold;
-    color: #205bda;
-    line-height: 1;
-    margin-left: 8vh;
+  .jj {
+    display: relative;
     margin-top: 20vh;
-    text-decoration-line: var(--bg);
-  }
-  .hero .content h1 span {
-    color: rgb(234, 255, 7);
-    margin-left: 20vh;
   }
 
-  .hero .content p {
-    font-size: 6rem;
-    line-height: 2;
-    font-weight: 800;
-    color: #d5fa04;
-    margin-left: 8vh;
-    text-shadow: #222;
-    width: 2;
+  .jj .bumdesicon {
+    width: 200px;
+    margin-left: 10vh;
+    cursor: pointer;
+    border: 5px solid black;
+    border-radius: 50px;
+    background-color: wheat;
+    transition: 0.8s;
   }
-  .hero .content .cta {
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 1rem 3rem;
-    font-size: 1.6rem;
-    color: #ffffff;
-    font-style: italic;
-    background-color: #ff00ee;
-    border-radius: 0.2rem;
-    box-shadow: 1px 1px 3px rgb(255, 6, 209);
-    margin-left: 8vh;
+  .jj .kerjasamaicon {
+    width: 200px;
+    margin-left: 10vh;
+    margin-top: 5vh;
+    cursor: pointer;
+    border: 5px solid black;
+    border-radius: 50px;
+    background-color: wheat;
+    transition: 0.8s;
+  }
+  .jj .kawasanicon {
+    width: 165px;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 20vh;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 5px solid black;
+    background-color: wheat;
+    transition: 0.8s;
+  }
+  .jj img:hover {
+    transform: scale(1.3);
+  }
+  .dd {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    height: 70vh;
+  }
+  .dd .v {
+    background-color: wheat;
+    cursor: pointer;
+    transition: 0.8s;
+    border: 5px solid black;
+    width: 220px;
+    height: 165px;
+    border-radius: 50px;
+    margin-left: 10vh;
+  }
+  .dd .tata {
+    width: 100%;
+    margin-left: -0.1vh;
+    margin-top: -5vh;
+  }
+  .dd .v:hover {
+    transform: scale(1.2);
+  }
+
+  .dd .v .tat {
+    color: black;
+    margin-top: -4vh;
+    margin-left: 7vh;
+    font-size: 15px;
+  }
+
+  .dd .kawasanicon {
+    width: 200px;
+    border-radius: 50px;
+    height: 165px;
+    margin-left: 10vh;
+    margin-top: -20vh;
+    cursor: pointer;
+    border: 5px solid black;
+    background-color: wheat;
+    transition: 0.8s;
+  }
+  .dd .kawasanicon:hover {
+    transform: scale(1.2);
   }
 }

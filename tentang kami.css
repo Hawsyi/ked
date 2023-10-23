@@ -555,13 +555,47 @@ body {
 
 /* mobile phone */
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   html {
-    font-size: 55%;
+    font-size: 50%;
+  }
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    right: -100%;
+    width: 20rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
   }
   /* about */
   .div1 {
     display: relative;
+    height: 370vh;
   }
   .gambar {
     margin-top: 5vh;
@@ -629,6 +663,7 @@ body {
   }
   .div1 .gambarrr img {
     width: 60%;
+    margin-top: -5vh;
     margin-left: 2vh;
   }
   .div1 .gambarrr h2 {
@@ -729,7 +764,7 @@ body {
   }
   .div1 .gambar2 img {
     width: 50%;
-    margin-left: -35vh;
+    margin-left: -42vh;
   }
   .div1 .gambar2 h2 {
     color: black;
@@ -768,6 +803,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
     transition: 0.8s;
+    margin-left: 15vh;
     background-color: white;
   }
   .r:hover {
@@ -775,28 +811,28 @@ body {
     background-color: green;
   }
   .gambar3 {
-    padding-top: 1rem;
     display: flex;
     flex-wrap: wrap;
     background-color: khaki;
   }
   .div1 .gambar3 img {
-    width: 35%;
-    margin-left: 15vh;
+    width: 60%;
+    margin-top: 1vh;
+    margin-left: 3vh;
   }
   .div1 .gambar3 h2 {
     color: black;
-    font-size: 20px;
+    font-size: 16px;
   }
   .div1 .gambar3 .ncek {
-    margin-top: 29vh;
     border: 5px solid black;
     border-radius: 10px;
     height: 30px;
     background-color: white;
     color: black;
-    font-size: 20px;
-    margin-left: 5vh;
+    font-size: 16px;
+    margin-left: 22vh;
+    margin-top: -23vh;
     cursor: pointer;
     transition: 0.8s;
   }
@@ -806,17 +842,16 @@ body {
   }
   .div1 .gambar3 p {
     display: relative;
-
     color: black;
-    font-size: 20px;
+    font-size: 16px;
   }
   .g {
     display: flex;
     border: 5px solid black;
     height: 80%;
-    width: 18.2%;
-    margin-left: 10vh;
-    margin-top: 29vh;
+    width: 45%;
+    margin-left: 20vh;
+    margin-top: 15vh;
     text-align: center;
     border-radius: 10px;
     background-color: white;
@@ -834,24 +869,27 @@ body {
     background-color: khaki;
   }
   .div1 .gambar4 img {
-    width: 30%;
-    margin-left: 30vh;
+    width: 50%;
+    margin-top: 2vh;
+    margin-left: 5vh;
+    padding-bottom: 2rem;
   }
   .div1 .gambar4 h2 {
     color: black;
-    font-size: 20px;
+    font-size: 16px;
   }
   .div1 .gambar4 .fahri {
-    margin-top: 30vh;
+    margin-top: -20vh;
     color: black;
-    font-size: 20px;
-    margin-left: 10vh;
+    font-size: 16px;
+    margin-left: 25vh;
     border: 5px solid black;
     border-radius: 10px;
     background-color: white;
-    height: 30px;
+    height: 15%;
     cursor: pointer;
     transition: 0.8s;
+    padding-bottom: 1rem;
   }
   .div1 .gambar4 .fahri:hover {
     background-color: purple;
@@ -860,15 +898,15 @@ body {
   .div1 .gambar4 p {
     display: relative;
     color: black;
-    font-size: 20px;
+    font-size: 16px;
   }
   .f {
     display: flex;
     border: 5px solid black;
     height: 80%;
-    width: 14%;
-    margin-left: 10vh;
-    margin-top: 29vh;
+    width: 35%;
+    margin-left: 26vh;
+    margin-top: 10vh;
     text-align: center;
     border-radius: 10px;
     background-color: white;
