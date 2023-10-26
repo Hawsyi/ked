@@ -222,8 +222,10 @@ body {
   background-color: rgb(255, 140, 0);
 }
 .jj h1 {
-  margin-left: 70vh;
+  margin-left: 63vh;
   color: brown;
+  margin-bottom: 5vh;
+  padding-top: 1rem;
 }
 
 .jj .bumdesicon {
@@ -231,7 +233,7 @@ body {
   padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-left: 16vh;
+  margin-left: 15vh;
   cursor: pointer;
   border: 5px solid white;
   background-color: wheat;
@@ -242,7 +244,7 @@ body {
   padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-left: 20vh;
+  margin-left: 18vh;
   cursor: pointer;
   border: 5px solid white;
   background-color: wheat;
@@ -253,7 +255,7 @@ body {
   padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-left: 20vh;
+  margin-left: 18vh;
   cursor: pointer;
   border: 5px solid white;
   background-color: wheat;
@@ -263,8 +265,6 @@ body {
   transform: scale(1.1);
 }
 .kiw {
-  padding: 1rem;
-  background-color: rgb(255, 140, 0);
   cursor: pointer;
   transition: 0.8s;
 }
@@ -272,8 +272,9 @@ body {
   transform: scale(1.1);
 }
 .img5 {
+  margin-top: 5vh;
   width: 170px;
-  margin-left: 82vh;
+  margin-left: 80vh;
 }
 .jj h2 {
   padding: 1rem;
