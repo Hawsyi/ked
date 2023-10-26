@@ -716,19 +716,24 @@ footer .credit a:hover {
   .jj img:hover {
     transform: scale(1.1);
   }
-  .kiw {
-    padding: 1rem;
-    background-color: rgb(255, 140, 0);
+  .jj .kiw {
+    width: 100px;
+    height: 20px;
     cursor: pointer;
     transition: 0.8s;
+    background-color: rgb(19, 146, 168);
+    margin-left: 18vh;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-top: 5vh;
   }
-  .kiw:hover {
-    transform: scale(1.1);
+  .jj .kiw a {
+    color: black;
+    font-weight: 1000;
+    margin-top: 2vh;
+    margin-left: 2.5vh;
   }
-  .img5 {
-    width: 170px;
-    margin-left: 13vh;
-  }
+
   .jj h2 {
     padding: 1rem;
     color: whitesmoke;
