@@ -1,161 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-<<<<<<< HEAD
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KED</title>
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+
+<html>
+<head>
+    <title><?php echo $title ?></title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css">
 </head>
 <body>
-<div class="isi">
-  <form class="for-group row">
-  <label class="col-md-3">
-    Nama
-  </label>
-  <div class="col-md">
-    <input type="text" id="nama">
-  </div>  
-  </form>
-  <form class="for-group row">
-  <label class="col-md-3">
-    Desa
-  </label>
-  <div class="col-md-3">
-    <input type="text" id="desa">
-  </div>  
-  </form>
-  <form class="for-group row">
-  <span class="col-md-3">
-    
-  </span>
-  <div class="col-md text-right"> 
-<button type="button" class="btn btn-primary" onclick="tampilData()">Submit</button>
-  </div>  
-  </form>
-  <table class="table table-stripped" id="tabelData">
-    <tr>
-      <th>Nama</th>
-      <th>Desa</th>
-    </tr>
-  </table>
+<div class="container" style="margin-top: 20px">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 style="text-align: center;margin-bottom: 30px">Data Buku Dengan CodeIgniter & DataTables</h2>
+            <table id="table_id" class="table table-striped table-bordered" cellspacing="0" width="100%">
+              <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nama</th>
+                    <th>Alamat</th>
+                    <th>Posting</th>
+               <th style="width:125px;">Action
+                  </p></th>
+                </tr>
+              </thead>
+              <tbody>
+                    <?php 
+                        $no = 1;
+                        foreach($data_buku as $buku){
+                    ?>
+                        <tr>
+                            <td><?php echo $no++;?></td>
+                            <td><?php echo $buku->nama;?></td>
+                            <td><?php echo $buku->alamat;?></td>
+                            <td><?php echo $buku->startDate;?></td>
+                            <td style="text-align: center;">
+                                <button class="btn btn-sm btn-primary" onclick="edit_book(<?php echo $buku->id;?>)"><i class="glyphicon glyphicon-pencil"></i></button>
+                                <button class="btn btn-sm btn-danger" onclick="delete_book(<?php echo $buku->id;?>)"><i class="glyphicon glyphicon-trash"></i></button>
+                            </td>
+                        </tr>
+                    <?php }?>
+
+              </tbody>
+            </table>
+        </div>
+    </div>
 </div>
-<script>
-  function tampilData(){
-    document.getElementById('tabelData').insertRow(-1).innerHTML=`<tr>
-      <th>`+$("#nama").val+`</th>
-      <th>`+$("desa").val+`</th>
-    </tr>` ; 
-  }
-</script>
-
-
-</body>
-=======
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KED</title>
-    <!-- feather icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="databumdes.css" />
-<!-- library datables -->
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.js"></script>
-<script type="text/javascript" src="https//cdn.datatables.net/1.13.6/js/jquerydataTables.min.js"></script>
-<!-- my style -->
-  </head>
-
-  <body>
-    <!-- Navbar Start -->
-
-    <nav class="navbar">
-      <a href="index.html" class="navbar-logo"
-        >BUMDES.</a>
-
-      <div class="navbar-nav">
-        <a href="data bumdes.php">HOME</a>
-        <a href="tentang kami.html">PROFIL</a>
-        <a href="kegiatan.html">KEGIATAN</a>
-        <a href="#">INFORMASI</a>
-      </div>
-
-      <div class="navbar-extra">
-        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
-      </div>
-    </nav>
-    <!-- Navbar End -->
-    <!-- form input -->
-<div class="form" >
-    <h3>data bumdes kabupaten bogor</h3>
-    <table class="table">
-        <tr>
-            <th>DESA</th>
-            <td><input type="text" id="DESA" class="DESA" placeholder="name"></td>
-        </tr>
-        <tr>
-            <th>BUMDES</th>
-            <td><input type="text" id="BUMDES" class="BUMDES" placeholder="name"></td>
-        </tr>
-        <tr>
-            <th>DIREKTUR</th>
-            <td><input type="text" id="DIREKTUR" class="DIREKTUR" placeholder="name"></td>
-        </tr>
-        <tr>
-            <th>Bumdes</th>
-            <td>
-                <div class="tampil">
-
-            </td>
-        </tr>
-<tr>
-    <th></th>
-    <td><button type="button" onclick="simpan_data()" class="btn" btn-succes>Submit</button></td>
-    <td><button type="reset" onclick="reset_form()" class="btn" btn-danger>reset</button></td>
-</tr></div>
-    </table>
-</div>
-<!-- list data     -->
-<div class="list"><h3>List Data Bumdes Kabupaten Bogor</h3>
-<div id="list-data"></div>
-</div>
-
-
-</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
 <script type="text/javascript">
-    function tampil(){
-var DESA = $("DESA").val
-var BUMDES = $("BUMDES").val
-var DIREKTUR = $("DIREKTUR").val
-
-    }
-
-    $.ajax({
-        url: "ajaxinput.php", 
-    });
-    function simpan_data(){
-        var DESA = $("DESA").val
-var BUMDES = $("BUMDES").val
-var DIREKTUR = $("DIREKTUR").val
-    
-if(DESA!='' && BUMDES!='' && DIREKTUR!='' ){
-$.ajax({
-    url: "ajaxinput.php",
-    data: "DESA="+DESA+"#BUMDES="+BUMDES"#DIREKTUR="+DIREKTUR+"&data=simpan",
-    success:function(html){
-
-    }
-})
-}
-else{
-        alert("lengkapi isian!");
-    }}
+  $(document).ready( function () {
+      $('#table_id').DataTable();
+  } );
 </script>
+</body>
 </html>
->>>>>>> b2be142e985526c6f3b57d0552e1f34d481ff366

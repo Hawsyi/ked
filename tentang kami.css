@@ -636,12 +636,12 @@ body {
     transform: scale(1.3);
   }
   .div1 .gambarr .alan {
-    margin-left: 1vh;
+    margin-left: 22vh;
     border: 5px solid black;
     border-radius: 10px;
     background-color: white;
     height: 30px;
-    margin-top: 10vh;
+    margin-top: -23vh;
     cursor: pointer;
     transition: 0.8s;
   }
@@ -690,11 +690,11 @@ body {
     transform: scale(1.3);
   }
   .div1 .gambarrr .pur {
-    margin-left: 30vh;
+    margin-left: 22vh;
     height: 30px;
     margin-top: -25vh;
     text-align: center;
-    width: 100px;
+    width: 180px;
     border-radius: 10px;
     border: 5px solid black;
     background-color: white;
@@ -796,8 +796,8 @@ body {
   .r {
     display: flex;
     border: 5px solid black;
-    height: 80%;
-    width: 65%;
+    height: 30px;
+    width: 260px;
     margin-top: -10vh;
     text-align: center;
     border-radius: 10px;
@@ -830,11 +830,12 @@ body {
     height: 30px;
     background-color: white;
     color: black;
-    font-size: 16px;
+    font-size: 15px;
     margin-left: 22vh;
     margin-top: -23vh;
     cursor: pointer;
     transition: 0.8s;
+    width: 250px;
   }
   .div1 .gambar3 .ncek:hover {
     background-color: purple;
@@ -849,7 +850,7 @@ body {
     display: flex;
     border: 5px solid black;
     height: 80%;
-    width: 45%;
+    width: 48%;
     margin-left: 20vh;
     margin-top: 15vh;
     text-align: center;
@@ -881,12 +882,12 @@ body {
   .div1 .gambar4 .fahri {
     margin-top: -20vh;
     color: black;
-    font-size: 16px;
+    font-size: 15px;
     margin-left: 25vh;
     border: 5px solid black;
     border-radius: 10px;
     background-color: white;
-    height: 15%;
+    height: 10%;
     cursor: pointer;
     transition: 0.8s;
     padding-bottom: 1rem;
