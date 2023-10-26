@@ -220,6 +220,7 @@ body {
 /* div baru */
 .jj {
   background-color: rgb(255, 140, 0);
+  height: 58vh;
 }
 .jj h1 {
   margin-left: 63vh;
@@ -264,18 +265,24 @@ body {
 .jj img:hover {
   transform: scale(1.1);
 }
-.kiw {
+.jj .kiw {
+  width: 170px;
+  height: 30px;
   cursor: pointer;
   transition: 0.8s;
-}
-.kiw:hover {
-  transform: scale(1.1);
-}
-.img5 {
+  background-color: rgb(19, 146, 168);
+  margin-left: 82vh;
+  border: 1px solid black;
+  border-radius: 25px;
   margin-top: 5vh;
-  width: 170px;
-  margin-left: 80vh;
-  margin-bottom: 5vh;
+}
+.jj .kiw a {
+  color: black;
+  font-weight: 1000;
+  margin-left: 4vh;
+}
+.jj .kiw:hover {
+  transform: scale(1.1);
 }
 .jj h2 {
   padding: 1rem;
