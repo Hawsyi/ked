@@ -521,37 +521,7 @@ body {
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
   }
-  /* .about .row {
-    flex-wrap: wrap;
-  }
-  .about .row .about-img img {
-    height: 24rem;
-    object-fit: cover;
-    object-position: center;
-  }
-  .about .row .content {
-    padding: 0;
-  }
-  .about .row .content h3 {
-    margin-top: 1rem;
-    font-size: 2rem;
-  }
-  .about .row .content p {
-    font-size: 1.6rem;
-  }
-  .contact .row {
-    flex-wrap: wrap;
-  }
-  .contact .row .map {
-    height: 30rem;
-  }
-
-  .contact .row form {
-    padding-top: 0;
-  }
-} */
 }
-/* mobile phone */
 
 /* mobile phone */
 
@@ -578,7 +548,7 @@ body {
   }
 
   .navbar .navbar-nav a {
-    color: var(--bg);
+    color: black;
     display: block;
     margin: 1.5rem;
     padding: 0.5rem;
@@ -587,6 +557,7 @@ body {
 
   .navbar .navbar-nav a::after {
     transform-origin: 0 0;
+    color: green;
   }
 
   .navbar .navbar-nav a:hover::after {
@@ -803,7 +774,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
     transition: 0.8s;
-    margin-left: 15vh;
+    margin-left: 13vh;
     background-color: white;
   }
   .r:hover {
@@ -817,7 +788,7 @@ body {
   }
   .div1 .gambar3 img {
     width: 60%;
-    margin-top: 1vh;
+    margin-top: -3vh;
     margin-left: 3vh;
   }
   .div1 .gambar3 h2 {
@@ -832,7 +803,7 @@ body {
     color: black;
     font-size: 15px;
     margin-left: 22vh;
-    margin-top: -23vh;
+    margin-top: -22vh;
     cursor: pointer;
     transition: 0.8s;
     width: 250px;
@@ -852,7 +823,7 @@ body {
     height: 80%;
     width: 48%;
     margin-left: 20vh;
-    margin-top: 15vh;
+    margin-top: 10vh;
     text-align: center;
     border-radius: 10px;
     background-color: white;
@@ -871,7 +842,7 @@ body {
   }
   .div1 .gambar4 img {
     width: 50%;
-    margin-top: 2vh;
+    margin-top: -3vh;
     margin-left: 5vh;
     padding-bottom: 2rem;
   }
