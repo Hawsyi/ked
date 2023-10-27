@@ -652,6 +652,7 @@ footer .credit a:hover {
   .about .mow .about-img {
     flex: 1 0 0rem;
     margin-top: 10vh;
+    margin-right: 2vh;
   }
   .about .mow .about-img img {
     width: 100%;
@@ -663,6 +664,7 @@ footer .credit a:hover {
     font-size: 1.8rem;
     color: #f8fff8;
     margin-top: 10vh;
+    margin-left: 8vh;
   }
   .about .mow .content p {
     margin-bottom: 0.8rem;
@@ -670,6 +672,7 @@ footer .credit a:hover {
     font-weight: 1000;
     line-height: 1.6;
     color: #fff;
+    margin-left: 8vh;
   }
 
   /* div baru */
