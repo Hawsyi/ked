@@ -118,6 +118,7 @@ body {
 .about .row .bumdes1-card .guru-card-tittle {
   margin-left: 7vh;
   color: black;
+  margin-top: 1vh;
 }
 
 .about .row .bumdes2-card {
@@ -162,7 +163,7 @@ body {
 }
 .about .row .bumdes3-card .guru-card-tittle {
   color: black;
-  margin-top: 4vh;
+  margin-top: 2vh;
 }
 .about .row .bumdes4-card {
   text-align: center;
@@ -443,15 +444,16 @@ body {
 
   .about .row .bumdes1-card img {
     width: 50%;
-    margin-left: 2vh;
-    margin-top: 5vh;
+    margin-left: 3vh;
+    margin-top: 2vh;
   }
   .about .row .bumdes1-card:hover {
     transform: scale(1.1);
   }
   .about .row .bumdes1-card .guru-card-tittle {
-    margin-left: 4vh;
+    margin-left: 5vh;
     color: black;
+    margin-top: 1vh;
   }
 
   .about .row .bumdes2-card {
@@ -466,7 +468,7 @@ body {
 
   .about .row .bumdes2-card img {
     width: 55%;
-    margin-top: 3vh;
+    margin-top: 1vh;
   }
   .about .row .bumdes2-card:hover {
     transform: scale(1.1);
@@ -480,7 +482,7 @@ body {
     text-align: center;
     margin-top: 2vh;
     margin-left: -1vh;
-    height: 140px;
+    height: 120px;
     justify-content: center;
     background-color: wheat;
     border: 5px solid black;
@@ -498,7 +500,7 @@ body {
   }
   .about .row .bumdes3-card .guru-card-tittle {
     color: black;
-    margin-top: 2vh;
+    margin-top: 1vh;
   }
   .about .row .bumdes4-card {
     text-align: center;
@@ -508,7 +510,7 @@ body {
     cursor: pointer;
     transition: 0.8s;
     width: 150px;
-    height: 140px;
+    height: 120px;
     margin-top: 2vh;
   }
 
@@ -520,7 +522,7 @@ body {
     transform: scale(1.1);
   }
   .about .row .bumdes4-card .guru-card-tittle {
-    margin-top: 2vh;
+    margin-top: 1vh;
     color: black;
   }
 
