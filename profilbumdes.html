@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KED</title>
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="profil bumdes.css" />
+
+    <!-- my style -->
+  </head>
+
+            
+    <body>
+   
+    
+        <!-- Navbar Start -->
+      
+    
+        <nav class="navbar">
+    
+            <a href="index.html" class="navbar-logo"
+            >BUMDES.</a>
+    
+    <nav class="sub">
+          
+        <li>
+            <a href="#">Kategori</a>
+            <ul class="submenu">
+                <li><a class="n" href="#">pariwisata</a></li>
+                <li><a class="n" href="#">pertanian</a></li>
+                <li><a class="n" href="#">perdagangan</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    </nav>
+    
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+      
+    <div class="navbar-nav">
+      
+        
+        <a class="inf" href="#">Informasi</a>
+        
+        <form class="search" action="/search" method="get">
+            <input  type="text" id="search" name="q" placeholder="cari">
+            <input class="inn" type="submit" value="Cari">
+        </form>
+    
+        
+        
+      </div>
+    <!-- Navbar End -->
+        <!--About section start-->
+        <section id="about" class="about">
+          
+    
+            <div class="potopoto">
+                <h1>Bumdes <span>Sirnajaya</span></h1>
+                <div class="slides">
+                  <span id="slide-1"></span>
+                  <span id="slide-2"></span>
+                  <span id="slide-3"></span>
+                <div class="avengers">
+                 <img src="rawagede1.jpeg" alt="a"/>
+                 <img src="rawagede2.jpg" alt="d"/>
+                 <img src="rawagede3.jpg" alt="e"/>
+              </div></div>
+              <div class="navigation">
+                <a href="#slide-1">1</a>
+                <a href="#slide-2">2</a>
+                <a href="#slide-3">3</a>
+              </div>
+              <p> Bumdes Sirnajaya bergerak dalam sektor pariwisata blablablablabalbla.. <a href="#">selengkapnya</a>  </p>
+            
+            </div>
+         
+        <!--About section end-->
+    
+        
+     
+     
+      
+     
+        <!-- feather icons -->
+    
+        <script>
+          feather.replace();
+        </script>
+        <!-- my java script -->
+        <script src="script.js"></script>
+       
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>$(document).ready(function(){
+    $("button").click(function(event){
+    var name = $("#name").val()
+    $("span").html(name)
+    $("#name").val("")
+    });
+    });
+    </script>  
+    </body>
+</html>

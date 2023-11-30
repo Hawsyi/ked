@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submenu HTML</title>
+    <style>
+      /* Style untuk tampilan yang lebih menarik (opsional) */
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      ul ul {
+        display: none;
+        position: absolute;
+        margin-top: 5px;
+      }
+
+      li:hover > ul {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">Menu 1</a></li>
+      <li>
+        <a href="#">Menu 2</a>
+        <ul>
+          <li><a href="#">Submenu 2.1</a></li>
+          <li><a href="#">Submenu 2.2</a></li>
+          <li><a href="#">Submenu 2.3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Menu 3</a></li>
+    </ul>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 :root {
   --primary: #ffffff;
-  --bg: #1e1e1e;
+  --bg: #494848;
 }
 
 * {
@@ -23,37 +23,87 @@ body {
 /* Navbar */
 .navbar {
   align-items: center;
-  padding-top: 15vh;
   background-color: rgb(14, 14, 14);
   border-bottom: 1px solid #fff;
-
-  top: 0;
-  left: 0;
-  right: 0;
+  height: 15vh;
 }
-
-.navbar-logo {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fff;
-  font-style: italic;
-}
-.navbar-logo {
-  color: #fa6a04;
-  font-style: italic;
-}
-
-.navbar .navbar-nav a {
-  color: #fff;
+.navbar .navbar-logo {
   display: inline-block;
-  margin-left: 20vh;
+  font-weight: 700;
+  font-size: 2rem;
+  font-style: italic;
+  color: orange;
+  margin-top: 4vh;
+  margin-left: 5vh;
+}
+.sub {
+  position: absolute;
+  z-index: 9999;
+  margin-top: 15vh;
+  margin-left: 10vh;
+  color: white;
+}
+.sub a {
+  color: white;
 }
 
-.navbar .navbar-nav a:hover {
+.sub .n {
+  color: black;
+}
+/* CSS untuk styling */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  position: relative;
+}
+
+a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+/* Styling untuk submenu */
+ul.submenu {
+  display: none;
+  position: absolute;
+  min-width: 120px;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+li:hover ul.submenu {
+  display: block;
+}
+
+ul.submenu li {
+  display: block;
+}
+
+.navbar-nav {
+  padding-left: 25vh;
+  padding-right: 5vh;
+  padding-top: 15vh;
+}
+.navbar-nav .inf {
+  margin-left: 7vh;
+}
+.navbar-nav a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+}
+.navbar-nav a:hover {
   color: green;
 }
 
-.navbar .navbar-nav a::after {
+.navbar-nav a::after {
   content: "";
   display: block;
   padding-bottom: 0.5rem;
@@ -62,7 +112,7 @@ body {
   transition: 0.2s linear;
 }
 
-.navbar .navbar-nav a:hover::after {
+.navbar-nav a:hover::after {
   transform: scaleX(0.5);
 }
 
@@ -71,260 +121,93 @@ body {
 }
 .navbar .search {
   display: inline-block;
-  margin-left: 15vh;
+  margin-left: 2vh;
 }
 
 #hamburger-menu {
   display: none;
 }
-/* banner */
-.banner {
-  padding-top: 1rem;
-  display: flex;
-  justify-content: center;
+.search {
+  display: inline-block;
 }
-.banner img {
-  width: 100%;
-  height: 50vh;
-}
-/* card*/
-.about .row {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 1rem;
-  justify-content: center;
-}
-.row {
-  margin-top: 5rem;
-}
-
-.about .row .bumdes1-card {
+.search input {
   background-color: wheat;
-  border: 5px solid black;
-  margin-right: 5vh;
-  cursor: pointer;
-  transition: 0.8s;
-  width: 200px;
-}
-
-.about .row .bumdes1-card img {
-  width: 50%;
-  margin-left: 7vh;
-  margin-top: 5vh;
-}
-.about .row .bumdes1-card:hover {
-  transform: scale(1.1);
-}
-.about .row .bumdes1-card .guru-card-tittle {
-  margin-left: 3vh;
-  color: black;
-  margin-top: 1vh;
-}
-
-.about .row .bumdes2-card {
-  text-align: center;
-  background-color: wheat;
-  justify-content: center;
-  border: 5px solid black;
-  cursor: pointer;
-  transition: 0.8s;
-}
-
-.about .row .bumdes2-card img {
-  width: 55%;
-  margin-top: 3vh;
-}
-.about .row .bumdes2-card:hover {
-  transform: scale(1.1);
-}
-
-.about .row .bumdes2-card .guru-card-tittle {
-  margin-top: 1vh;
-  color: black;
-}
-.about .row .bumdes3-card {
-  text-align: center;
-  margin-left: 5vh;
-  margin-right: 5vh;
-  justify-content: center;
-  background-color: wheat;
-  border: 5px solid black;
-  cursor: pointer;
-  transition: 0.8s;
-  width: 15%;
-}
-
-.about .row .bumdes3-card img {
-  width: 50%;
-  margin-top: 5vh;
-}
-.about .row .bumdes3-card:hover {
-  transform: scale(1.1);
-}
-.about .row .bumdes3-card .guru-card-tittle {
-  color: black;
-  margin-top: 2vh;
-}
-.about .row .bumdes4-card {
-  text-align: center;
-  border: 5px solid black;
-  justify-content: center;
-  background-color: wheat;
-  cursor: pointer;
-  transition: 0.8s;
-}
-
-.about .row .bumdes4-card img {
-  width: 50%;
-  margin-top: 5vh;
-}
-.about .row .bumdes4-card:hover {
-  transform: scale(1.1);
-}
-.about .row .bumdes4-card .guru-card-tittle {
-  margin-top: 1vh;
-  color: black;
-}
-.row {
-  margin-top: 2rem;
-}
-
-.about .row .bumdes5-card {
-  background-color: wheat;
-  border: 5px solid black;
-  margin-right: 5vh;
-  cursor: pointer;
-  transition: 0.8s;
-  width: 200px;
-  height: 200px;
-}
-
-.about .row .bumdes5-card img {
-  width: 50%;
-  margin-left: 7vh;
-  margin-top: 5vh;
-}
-.about .row .bumdes5-card:hover {
-  transform: scale(1.1);
-}
-.about .row .bumdes5-card .guru-card-tittle {
-  margin-left: 7vh;
-  color: black;
-  margin-top: 1vh;
-}
-
-.about .row .bumdes6-card {
-  text-align: center;
-  background-color: wheat;
-  justify-content: center;
-  border: 5px solid black;
-  cursor: pointer;
-  transition: 0.8s;
-  width: 200px;
-  height: 200px;
-}
-
-.about .row .bumdes6-card img {
-  width: 55%;
-  margin-top: 3vh;
-}
-.about .row .bumdes6-card:hover {
-  transform: scale(1.1);
-}
-
-.about .row .bumdes6-card .guru-card-tittle {
-  margin-top: 1vh;
-  color: black;
-}
-.about .row .bumdes7-card {
-  text-align: center;
-  margin-left: 5vh;
-  margin-right: 5vh;
-  justify-content: center;
-  background-color: wheat;
-  border: 5px solid black;
-  cursor: pointer;
-  transition: 0.8s;
-  width: 15%;
-}
-
-.about .row .bumdes7-card img {
-  width: 50%;
-  margin-top: 5vh;
-}
-.about .row .bumdes7-card:hover {
-  transform: scale(1.1);
-}
-.about .row .bumdes7-card .guru-card-tittle {
-  color: black;
-  margin-top: 2vh;
-}
-.about .row .bumdes8-card {
-  text-align: center;
-  border: 5px solid black;
-  justify-content: center;
-  background-color: wheat;
-  cursor: pointer;
-  transition: 0.8s;
-}
-
-.about .row .bumdes8-card img {
-  width: 50%;
-  margin-top: 5vh;
-}
-.about .row .bumdes8-card:hover {
-  transform: scale(1.1);
-}
-.about .row .bumdes4-card .guru-card-tittle {
-  margin-top: 1vh;
-  color: black;
-}
-.isi {
-  display: flex;
-  margin-top: 10vh;
-  background-color: white;
-}
-.isi input {
-  border: 2px solid black;
-}
-.isi h3 {
-  text-align: center;
-}
-
-.tablee {
-  padding-top: 5rem;
-  background-color: var(--bg);
-  width: 100%;
-  height: 80%;
-  padding-bottom: 5rem;
-}
-.tablee h3 {
-  margin-left: 42.5vh;
-  text-align: center;
-  background-color: green;
   border-radius: 5px;
-  width: 56.7%;
-  height: 20%;
-  border: 2px solid white;
-}
-.tablee table {
+  font-style: normal;
+  border: 2px solid black;
   text-align: center;
+}
+.search .inn {
+  border: 2px solid black;
+  border-radius: 2px;
+  font-size: 13px;
+  width: 7vh;
+}
+
+/* avengers */
+.avengers {
+  display: flex;
+  padding-top: 5rem;
+  transition: 2s;
+}
+.potopoto {
   position: relative;
-  margin: auto;
-  background-color: white;
+
+  width: 500px;
+  margin-left: 5vh;
+  overflow: hidden;
+}
+.avengers img {
+  width: 500px;
   border-radius: 10px;
 }
-.tablee th,
-.tablee td {
-  padding: 7px 17px;
-  border: 1px solid grey;
-  border-radius: 5px;
+
+#slide-1:target ~ .avengers {
+  margin-left: 0px;
 }
-.tablee thead th {
-  background-color: green;
-  color: black;
-  border-color: white;
-  text-transform: uppercase;
+#slide-2:target ~ .avengers {
+  margin-left: -500px;
+}
+#slide-3:target ~ .avengers {
+  margin-left: -1000px;
+}
+
+.navigation a {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  font-size: 0px;
+  border-radius: 50%;
+  margin: 3px;
+  transition: 0.5s;
+}
+.navigation a:hover {
+  background-color: brown;
+}
+.navigation {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: -50px;
+}
+.potopoto h1 {
+  padding-top: 9rem;
+  color: rgba(255, 250, 250, 0.913);
+  text-align: center;
+}
+.potopoto h1 span {
+  text-align: center;
+  color: white;
+}
+p {
+  color: white;
+}
+p a {
+  color: orange;
 }
 
 /* media queries */
