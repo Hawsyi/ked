@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitur Pencarian</title>
+    <style>
+      /* Tambahkan gaya CSS sesuai kebutuhan Anda */
+    </style>
+  </head>
+  <body>
+    <h1>Fitur Pencarian</h1>
+
+    <label for="searchInput">Cari:</label>
+    <input type="text" id="searchInput" placeholder="Ketik kata kunci" />
+    <button onclick="search()">Cari</button>
+
+    <ul id="searchResults">
+      <!-- Hasil pencarian akan ditampilkan di sini -->
+    </ul>
+
+    <script>
+      function search() {
+        // Dapatkan nilai input dari pengguna
+        var searchQuery = document
+          .getElementById("searchInput")
+          .value.toLowerCase();
+
+        // Lakukan pencarian (contoh sederhana)
+        var allItems = ["Item 1", "Item 2", "Item 3", "Item 4"]; // Gantilah dengan data yang sesuai
+        var searchResults = [];
+
+        for (var i = 0; i < allItems.length; i++) {
+          if (allItems[i].toLowerCase().includes(searchQuery)) {
+            searchResults.push(allItems[i]);
+          }
+        }
+
+        // Tampilkan hasil pencarian di dalam elemen dengan id 'searchResults'
+        displayResults(searchResults);
+      }
+
+      function displayResults(results) {
+        var resultList = document.getElementById("searchResults");
+        resultList.innerHTML = ""; // Hapus hasil sebelumnya
+
+        // Tambahkan hasil pencarian ke dalam daftar (ul)
+        for (var i = 0; i < results.length; i++) {
+          var listItem = document.createElement("li");
+          listItem.textContent = results[i];
+          resultList.appendChild(listItem);
+        }
+      }
+    </script>
+  </body>
+</html>
