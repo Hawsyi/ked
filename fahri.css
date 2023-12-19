@@ -1,0 +1,807 @@
+:root {
+    --primary: #ffffff;
+    --bg: rgb(32, 32, 32);
+    background-blend-mode: color-burn;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: none;
+    text-decoration: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "poppins", sans-serif;
+    background-color: var(--bg);
+    color: var(--bg);
+  }
+  .banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner video {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .banner h1 {
+    font-size: 30px;
+    position: absolute;
+    z-index: 2;
+    color: orange;
+    margin-bottom: 40vh;
+    margin-right: 100vh;
+  }
+  
+  .banner h2 {
+    font-size: 50px;
+    position: absolute;
+    z-index: 2;
+    color: black;
+    margin-bottom: 30vh;
+    margin-right: 100vh;
+  }
+  
+  .banner h3 {
+    position: absolute;
+    margin-top: 20vh;
+    color: white;
+    margin-right: 100vh;
+    text-shadow: black;
+  }
+  .banner h4 {
+    font-size: 70px;
+    position: absolute;
+    margin-top: 50vh;
+    color: rgb(255, 165, 0);
+    margin-right: 150vh;
+    text-shadow: black;
+  }
+  .banner h5 {
+    font-size: 70px;
+    position: absolute;
+    margin-top: 50vh;
+    color: rgb(255, 165, 0);
+    margin-right: 70vh;
+    text-shadow: black;
+  }
+  .banner h6 {
+    font-size: 70px;
+    position: absolute;
+    margin-top: 50vh;
+    color: orange;
+    margin-left: 10vh;
+    text-shadow: black;
+  }
+  .banner .guru-card-tittle {
+    font-size: 17px;
+    padding-top: 5rem;
+    position: absolute;
+    margin-top: 60vh;
+    color: white;
+    margin-right: 150vh;
+    text-shadow: black;
+  }
+  .banner .mm {
+    font-size: 20px;
+    padding-top: 5rem;
+    position: absolute;
+    margin-top: 60vh;
+    color: white;
+    margin-right: 70vh;
+    text-shadow: black;
+  }
+  .banner .ss {
+    font-size: 20px;
+    padding-top: 5rem;
+    position: absolute;
+    margin-top: 60vh;
+    color: white;
+    margin-left: 10vh;
+    text-shadow: black;
+  }
+  
+  .banner .img6 {
+    position: absolute;
+    width: 200px;
+    margin-top: 55vh;
+    margin-right: 150vh;
+  }
+  .banner .img7 {
+    position: absolute;
+    width: 200px;
+    margin-top: 55vh;
+    margin-right: 70vh;
+  }
+  .banner .img8 {
+    position: absolute;
+    width: 200px;
+    margin-top: 55vh;
+    margin-left: 10vh;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    background-color: rgb(0, 0, 0, 0.8);
+    border-bottom: 1px solid #fff;
+    position: fixed;
+    top: 0;
+    left: 0;  
+    right: 0;
+    z-index: 9999;
+    height: 3vh;
+  }
+  
+  .navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+  }
+  .navbar .navbar-logo span {
+    color: #fa6a04;
+    font-style: italic;
+  }
+  
+  .navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 1rem;
+  }
+  
+  .navbar .navbar-nav a:hover {
+    color: green;
+  }
+  
+  .navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid rgb(123, 6, 78);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+  
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+  }
+  
+  .navbar .navbar-extra a {
+    color: #fff;
+  }
+  
+  #hamburger-menu {
+    display: none;
+  }
+  
+  .about .mow {
+    display: flex;
+    padding-top: 2rem;
+    background-color: rgb(19, 18, 18);
+  }
+  .about .mow .about-img {
+    flex: 1 0 0rem;
+  }
+  .about .mow .about-img img {
+    width: 50%;
+  }
+  .about .mow .content {
+    flex: 1 1 35rem;
+  }
+  .about .mow .content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    margin-left: 10vh;
+    color: #f8fff8;
+    margin-top: 10vh;
+  }
+  .about .mow .content p {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    font-weight: 1000;
+    line-height: 1.6;
+    margin-left: 10vh;
+    color: #fff;
+  }
+  
+  /* div baru */
+  .jj {
+    background-color: rgb(255, 140, 0);
+    height: 58vh;
+  }
+  .jj h1 {
+    margin-left: 63vh;
+    color: brown;
+    margin-bottom: 5vh;
+    padding-top: 1rem;
+  }
+  
+  .jj .bumdesicon {
+    width: 180px;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 15vh;
+    cursor: pointer;
+    border: 5px solid white;
+    background-color: wheat;
+    transition: 0.9s;
+  }
+  .jj .kerjasamaicon {
+    width: 200px;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 18vh;
+    cursor: pointer;
+    border: 5px solid white;
+    background-color: wheat;
+    transition: 0.9s;
+  }
+  .jj .kawasanicon {
+    width: 165px;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 18vh;
+    cursor: pointer;
+    border: 5px solid white;
+    background-color: wheat;
+    transition: 0.9s;
+  }
+  .jj img:hover {
+    transform: scale(1.1);
+  }
+  .jj .kiw {
+    width: 170px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.8s;
+    background-color: rgb(19, 146, 168);
+    margin-left: 82vh;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-top: 5vh;
+  }
+  .jj .kiw a {
+    color: black;
+    font-weight: 1000;
+    margin-left: 4vh;
+  }
+  .jj .kiw:hover {
+    transform: scale(1.1);
+  }
+  .jj h2 {
+    padding: 1rem;
+    color: whitesmoke;
+  }
+  
+  /* avengers */
+  .avengers {
+    display: flex;
+    padding-top: 3rem;
+    transition: 2s;
+  }
+  .potopoto {
+    position: relative;
+    width: 500px;
+    margin: auto;
+    overflow: hidden;
+  }
+  .avengers img {
+    width: 500px;
+    border-radius: 10px;
+  }
+  
+  #slide-1:target ~ .avengers {
+    margin-left: 0px;
+  }
+  #slide-2:target ~ .avengers {
+    margin-left: -500px;
+  }
+  #slide-3:target ~ .avengers {
+    margin-left: -1000px;
+  }
+  
+  .navigation a {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    font-size: 0px;
+    border-radius: 50%;
+    margin: 3px;
+    transition: 0.5s;
+  }
+  .navigation a:hover {
+    background-color: brown;
+  }
+  .navigation {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: -50px;
+  }
+  .potopoto h1 {
+    padding-top: 2rem;
+    color: rgba(177, 53, 53, 0.913);
+    text-align: center;
+  }
+  .potopoto h1 span {
+    text-align: center;
+    color: white;
+  }
+  /*footer*/
+  footer {
+    background-color: rgb(14, 14, 14);
+    text-align: center;
+    position: relative;
+    margin-top: 10vh;
+    padding: 1rem;
+  }
+  footer .links a {
+    color: #b28a06;
+  }
+  footer .links a:hover {
+    color: #eee;
+  }
+  footer .social a {
+    color: #eee;
+  }
+  footer .social {
+    padding: 0 0;
+  }
+  footer .social a:hover {
+    color: var(--bg);
+  }
+  footer .credit p {
+    color: #eee;
+  }
+  footer .credit a {
+    color: #b28a06;
+    font-weight: 700;
+  }
+  footer .credit a:hover {
+    color: #eee;
+  }
+  /* media queries */
+  
+  /* laptop */
+  @media (max-width: 1000px) {
+    html {
+      font-size: 75%;
+    }
+    #hamburger-menu {
+      display: inline-block;
+    }
+  
+    .navbar .navbar-nav {
+      position: absolute;
+      background-color: #fff;
+      top: 100%;
+      right: -100%;
+      width: 30rem;
+      height: 100vh;
+      transition: 0.3s;
+    }
+  
+    .navbar .navbar-nav.active {
+      right: 0;
+    }
+  
+    .navbar .navbar-nav a {
+      color: var(--bg);
+      display: block;
+      margin: 1.5rem;
+      padding: 0.5rem;
+      font-size: 2rem;
+    }
+  
+    .navbar .navbar-nav a::after {
+      transform-origin: 0 0;
+    }
+  
+    .navbar .navbar-nav a:hover::after {
+      transform: scaleX(0.2);
+    }
+    .about .row {
+      flex-wrap: wrap;
+    }
+    .about .row .about-img img {
+      height: 24rem;
+      object-fit: cover;
+      object-position: center;
+    }
+    .about .row .content {
+      padding: 0;
+    }
+    .about .row .content h3 {
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
+    .about .row .content p {
+      font-size: 1.6rem;
+    }
+    .contact .row {
+      flex-wrap: wrap;
+    }
+    .contact .row .map {
+      height: 30rem;
+    }
+  
+    .contact .row form {
+      padding-top: 0;
+    }
+  }
+  
+  /* tablet */
+  
+  @media (max-width: 768px) {
+    html {
+      font-size: 62.5%;
+    }
+  
+    #hamburger-menu {
+      display: inline-block;
+    }
+  
+    .navbar .navbar-nav {
+      position: absolute;
+      background-color: #fff;
+      top: 100%;
+      right: -100%;
+      width: 30rem;
+      height: 100vh;
+      transition: 0.3s;
+    }
+  
+    .navbar .navbar-nav.active {
+      right: 0;
+    }
+  
+    .navbar .navbar-nav a {
+      color: var(--bg);
+      display: block;
+      margin: 1.5rem;
+      padding: 0.5rem;
+      font-size: 2rem;
+    }
+  
+    .navbar .navbar-nav a::after {
+      transform-origin: 0 0;
+    }
+  
+    .navbar .navbar-nav a:hover::after {
+      transform: scaleX(0.2);
+    }
+    .about .row {
+      flex-wrap: wrap;
+    }
+    .about .row .about-img img {
+      height: 24rem;
+      object-fit: cover;
+      object-position: center;
+    }
+    .about .row .content {
+      padding: 0;
+    }
+    .about .row .content h3 {
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
+    .about .row .content p {
+      font-size: 1.6rem;
+    }
+    .contact .row {
+      flex-wrap: wrap;
+    }
+    .contact .row .map {
+      height: 30rem;
+    }
+  
+    .contact .row form {
+      padding-top: 0;
+    }
+  }
+  /* mobile phone */
+  
+  @media (max-width: 500px) {
+    html {
+      font-size: 50%;
+    }
+  
+    #hamburger-menu {
+      display: inline-block;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 7%;
+      background-color: rgb(0, 0, 0, 0.8);
+      border-bottom: 1px solid #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+    }
+    .navbar .navbar-nav {
+      position: absolute;
+      background-color: #ffffff;
+      top: 100%;
+      right: -100%;
+      width: 20rem;
+      height: 100vh;
+      transition: 0.3s;
+    }
+  
+    .navbar .navbar-nav.active {
+      right: 0;
+    }
+  
+    .navbar .navbar-nav a {
+      color: var(--bg);
+      display: block;
+      margin: 1.5rem;
+      padding: 0.5rem;
+      font-size: 2rem;
+    }
+  
+    .navbar .navbar-nav a::after {
+      transform-origin: 0 0;
+    }
+  
+    .navbar .navbar-nav a:hover::after {
+      transform: scaleX(0.2);
+    }
+    .banner {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .banner video {
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: 100vh;
+    }
+    .banner h1 {
+      font-size: 30px;
+      position: absolute;
+      z-index: 2;
+      margin-left: 100vh;
+      color: white;
+    }
+    .banner h2 {
+      font-size: 30px;
+      position: absolute;
+      z-index: 2;
+      color: orange;
+      margin-top: 10vh;
+      margin-left: 92vh;
+    }
+    .banner h4 {
+      position: absolute;
+      font-size: 35px;
+      margin-left: 115vh;
+    }
+    .banner h5 {
+      position: absolute;
+      font-size: 35px;
+      margin-left: 70vh;
+    }
+    .banner h6 {
+      position: absolute;
+      font-size: 35px;
+      margin-left: 35vh;
+    }
+    .banner .img6 {
+      width: 100px;
+      margin-left: 115vh;
+    }
+    .banner .img7 {
+      width: 100px;
+      margin-left: 70vh;
+    }
+    .banner .img8 {
+      width: 100px;
+      margin-left: 35vh;
+    }
+    .banner .guru-card-tittle {
+      font-size: 12px;
+      margin-top: 55vh;
+      margin-left: 115vh;
+    }
+    .banner .mm {
+      font-size: 12px;
+      margin-top: 55vh;
+      margin-left: 70vh;
+    }
+    .banner .ss {
+      font-size: 12px;
+      margin-top: 55vh;
+      margin-left: 39vh;
+    }
+  
+    /* Rahma */
+    .about .mow {
+      display: flex;
+      margin-left: -5vh;
+      margin-top: -10vh;
+      background-color: rgb(19, 18, 18);
+    }
+    .about .mow .about-img {
+      flex: 1 0 0rem;
+      margin-top: 10vh;
+      margin-right: 2vh;
+    }
+    .about .mow .about-img img {
+      width: 100%;
+    }
+    .about .mow .content {
+      flex: 1 1 35rem;
+    }
+    .about .mow .content h3 {
+      font-size: 1.8rem;
+      color: #f8fff8;
+      margin-top: 10vh;
+      margin-left: 8vh;
+    }
+    .about .mow .content p {
+      margin-bottom: 0.8rem;
+      font-size: 1rem;
+      font-weight: 1000;
+      line-height: 1.6;
+      color: #fff;
+      margin-left: 8vh;
+    }
+  
+    /* div baru */
+    .jj {
+      background-color: rgb(255, 140, 0);
+    }
+    .jj h1 {
+      margin-left: 13vh;
+      color: brown;
+    }
+  
+    .jj .bumdesicon {
+      width: 100px;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin-left: 16vh;
+      cursor: pointer;
+      border: 5px solid white;
+      background-color: wheat;
+      transition: 0.9s;
+    }
+    .jj .kerjasamaicon {
+      width: 100px;
+      padding-top: 1rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin-left: 16vh;
+      cursor: pointer;
+      border: 5px solid white;
+      background-color: wheat;
+      transition: 0.9s;
+    }
+    .jj .kawasanicon {
+      width: 100px;
+      padding-top: 1rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin-left: 16vh;
+      cursor: pointer;
+      border: 5px solid white;
+      background-color: wheat;
+      transition: 0.9s;
+    }
+    .jj img:hover {
+      transform: scale(1.1);
+    }
+    .jj .kiw {
+      width: 100px;
+      height: 20px;
+      cursor: pointer;
+      transition: 0.8s;
+      background-color: rgb(19, 146, 168);
+      margin-left: 18vh;
+      border: 1px solid black;
+      border-radius: 25px;
+      margin-top: 5vh;
+    }
+    .jj .kiw a {
+      color: black;
+      font-weight: 1000;
+      margin-top: 2vh;
+      margin-left: 2.5vh;
+    }
+  
+    .jj h2 {
+      padding: 1rem;
+      color: whitesmoke;
+    }
+  
+    /* avengers */
+    .avengers {
+      display: flex;
+      padding-top: 3rem;
+      transition: 2s;
+    }
+    .potopoto {
+      position: relative;
+      width: 400px;
+      margin: auto;
+      overflow: hidden;
+    }
+    .avengers img {
+      width: 400px;
+      border-radius: 10px;
+    }
+  
+    #slide-1:target ~ .avengers {
+      margin-left: 0px;
+    }
+    #slide-2:target ~ .avengers {
+      margin-left: -400px;
+    }
+    #slide-3:target ~ .avengers {
+      margin-left: -790px;
+    }
+  
+    .navigation a {
+      display: inline-block;
+      height: 25px;
+      width: 25px;
+      background-color: white;
+      font-size: 0px;
+      border-radius: 50%;
+      margin: 3px;
+      transition: 0.5s;
+    }
+    .navigation a:hover {
+      background-color: brown;
+    }
+    .navigation {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+      margin-top: -50px;
+    }
+    .potopoto h1 {
+      padding-top: 2rem;
+      color: rgba(177, 53, 53, 0.913);
+      text-align: center;
+    }
+    .potopoto h1 span {
+      text-align: center;
+      color: white;
+    }
+  }
+  
